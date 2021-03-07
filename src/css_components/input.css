@@ -1,0 +1,52 @@
+/* 
+STYLE FOR INPUT ELEMENT 
+used in type="text", type="email" and <select> element 
+
+Classes:
+class="textInput"
+class="formSubmitAttempted"
+*/
+
+.textInput {
+    width: 300px;
+    height: 34px;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    text-align: left;
+    outline: none;
+    background-color: #FFFFFF;
+    border: 1.75px solid #8A8A8A;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+}
+
+::placeholder,
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+    color: #666666;
+    opacity: 1;
+}
+
+.textInput:hover {
+    border: 1.75px solid #666666;
+}
+
+.textInput:active {
+    border: 1.75px solid #006FDD;
+}
+
+.textInput:focus {
+    border: 1.75px solid #006FDD;
+    -webkit-box-shadow: 0px 0px 0px 3px #AED6FF;
+    -moz-box-shadow: 0px 0px 0px 3px #AED6FF;
+    box-shadow: 0px 0px 0px 3px #AED6FF;
+}
+
+.textInput:disabled {
+    background-color: #F0F0F0;
+    border: 1.75px solid #CECECE;
+}
+
+.formSubmitAttempted .textInput:invalid {
+    border: 1.75px solid #BF0001;
+}

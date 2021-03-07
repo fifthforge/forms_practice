@@ -1,0 +1,30 @@
+button {
+    all: unset;
+    text-align: center;
+    width: 120px;
+    height: 34px;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+    color: #FFFFFF;
+    background-color: #006FDD;
+}
+
+button:focus {
+    background-color: #0078EE;
+    -webkit-box-shadow: 0px 0px 0px 3px #AED6FF;
+    -moz-box-shadow: 0px 0px 0px 3px #AED6FF;
+    box-shadow: 0px 0px 0px 3px #AED6FF;
+}
+
+button:hover {
+    background-color: #0078EE;
+}
+
+button:active {
+    background-color: #0055AA;
+}
+
+button:disabled {
+    background-color: #DFDFDF;
+    color: #8A8A8A;
+}

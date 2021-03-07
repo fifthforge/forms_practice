@@ -1,0 +1,40 @@
+@import './reset.css';
+@import './css_components/typography.css';
+@import './css_components/button.css';
+@import './css_components/checkbox.css';
+@import './css_components/input.css';
+
+
+html {
+    background-color: #F0F2F7;
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        background-color: #F0F0F0;
+    }
+}
+
+b {
+    font-weight: bold;
+}
+
+a:link,
+a {
+    color: #006FDD;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #0078EE;
+    text-decoration: none;
+}
+
+a:active {
+    color: #0055AA;
+}
+
+a:visited {
+    color: #0055AA;
+}
