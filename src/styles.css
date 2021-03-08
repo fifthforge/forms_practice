@@ -3,7 +3,8 @@
 @import './css_components/button.css';
 @import './css_components/checkbox.css';
 @import './css_components/input.css';
-@import './css_components//error_field.css';
+@import './css_components/error_field.css';
+@import './css_components/alert.css';
 
 
 html {

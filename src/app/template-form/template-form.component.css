@@ -62,4 +62,8 @@ button {
         grid-template-rows: auto 46px 46px 46px 30px;
     }
 
+    button {
+        width: 100%;
+    }
+
 }
