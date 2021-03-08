@@ -36,21 +36,17 @@
     right: 0;
 }
 
-/* same as default alert */
-.alert-primary {
+.alert-blue {
+    border-color: #2291FF;
     background-color: #F1F8FF;
-    border: 1.75px solid #2291FF;
-    border-width: 2px 2px 2px 4px;
 }
 
-.alert-success {
+.alert-green {
+    border-color: #00A538;
     background-color: #E9FFF0;
-    border: 1.75px solid #00A538;
-    border-width: 2px 2px 2px 4px;
 }
 
-.alert-warning {
+.alert-red {
+    border-color: #BF0001;
     background-color: #FFF2F2;
-    border: 1.75px solid #BF0001;
-    border-width: 2px 2px 2px 4px;
 }

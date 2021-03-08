@@ -54,13 +54,15 @@
     </form>
 
     <div style="position: relative;">
-        <div *ngIf="showPrimaryAlert" class="alert">
+        <div *ngIf="showPrimaryAlert" class="alert alert-blue">
             <p>Test submit successful. Thanks for visiting (:</p>
             <span><b (click)="closeAlert()">✕</b></span>
         </div>
-        <div *ngIf="showWarningAlert" class="alert alert-warning">
+        <!-- 
+        <div *ngIf="showWarningAlert" class="alert alert-red">
             <p>Some of the fields were invalid!</p>
             <span><b (click)="closeAlert()">✕</b></span>
         </div>
+        -->
     </div>
 </main>
