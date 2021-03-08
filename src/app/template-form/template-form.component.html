@@ -1,34 +1,44 @@
 <main>
     <h1>Simple Newsletter Form</h1>
 
-    <form class="formGrid">
+    <form class="formGrid" [class.formSubmitAttempted]="formSubmitAttempted" #newsletterForm="ngForm" (ngSubmit)="subscribe(newsletterForm, $event)">
 
         <div class="gridColFull500">
-            <input class="textInput" type="text" placeholder="First Name *">
+            <input required ngModel name="nameFirst" class="textInput" type="text" placeholder="First Name *">
         </div>
 
         <div class="gridColFull500">
-            <input class="textInput" type="text" placeholder="Last Name *">
+            <input required ngModel name="nameLast" class="textInput" type="text" placeholder="Last Name *">
         </div>
 
         <div class="gridColFull">
-            <input class="textInput" type="text" placeholder="Email Address *">
+            <input required #emailAddress="ngModel" ngModel name="emailAddress" class="textInput" type="email" email placeholder="Email Address *">
+
+            <div *ngIf="emailAddress.errors?.email && formSubmitAttempted" class="errorBlockContainer">
+                <div class="invalidEmailBlock">
+                    <small>Your email address is invalid</small>
+                </div>
+                <div class="box"></div>
+            </div>
         </div>
 
         <div class="gridColFull">
-            <select class="textInput" name="" id=""></select>
+            <select ngModel name="selectTopic" class="textInput" [class.optionSelected]="optionSelected" (change)="topicSelected()">
+                <option value="" selected disabled hidden>Select Topic</option>
+                <option *ngFor="let topic of topics" value="{{topic}}">{{topic}}</option>
+            </select>
         </div>
 
         <div class="gridColFull">
             <label class="checkboxLabel" for="notBound">
-                <input type="checkbox">
+                <input required ngModel name="checkboxTerms" type="checkbox">
                 <p>I agree to the <a> Terms of use</a><span> *</span></p>
             </label>
         </div>
 
         <div class="gridColFull">
             <label class="checkboxLabel" for="notBound">
-                <input type="checkbox">
+                <input required ngModel name="checkboxPolicy" type="checkbox">
                 <p>I agree to the <a> Privacy policy</a><span> *</span></p>
             </label>
         </div>
@@ -38,7 +48,7 @@
         </div>
 
         <div>
-            <button>Submit</button>
+            <button type="submit">Submit</button>
         </div>
 
     </form>

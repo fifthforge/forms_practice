@@ -47,6 +47,19 @@ class="formSubmitAttempted"
     border: 1.75px solid #CECECE;
 }
 
+/* this is a class for invalid controllers */
 .formSubmitAttempted .textInput:invalid {
-    border: 1.75px solid #BF0001;
+    border-color: #BF0001;
+}
+
+select.textInput {
+    padding: 0 8px;
+    text-indent: 0px;
+    color: #666666;
+    /* this is a placeholder color, use color: #212121; if no need for a placeholder color */
+}
+
+/* need a function to change the class */
+select.optionSelected {
+    color: #212121;
 }

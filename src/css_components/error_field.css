@@ -1,0 +1,94 @@
+/* 
+BASIC STRUCTURE EXAMPLE 
+
+         <div *ngIf="emailAddress.errors?.email && formSubmitAttempted" class="errorBlockContainer">
+                <div class="invalidEmailBlock">
+                    <small>Your email address is invalid</small>
+                </div>
+                <div class="box"></div>
+            </div>
+*/
+
+
+.errorBlockContainer {
+    position: relative;
+    width: fit-content;
+}
+
+.errorBlockContainer .invalidEmailBlock {
+    width: fit-content;
+    padding: 2px 12px;
+    height: 24px;
+    background-color: #BF0001;
+    border-radius: 4px;
+    position: absolute;
+    left: 343px;
+    top: -14px;
+    z-index: 5;
+}
+
+.invalidEmailBlock>* {
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.errorBlockContainer .box {
+    transform: rotate(45deg);
+    left: 510px;
+    top: -50px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #BF0001;
+    z-index: 4;
+}
+
+@media screen and (max-width: 600px) {
+    .errorBlockContainer {
+        position: relative;
+        left: -30px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .errorBlockContainer {
+        position: relative;
+        left: -70px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .errorBlockContainer {
+        position: relative;
+        left: -110px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .errorBlockContainer {
+        position: relative;
+        left: -150px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .errorBlockContainer {
+        position: relative;
+        left: -190px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .errorBlockContainer {
+        position: relative;
+        left: -230px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .errorBlockContainer {
+        position: relative;
+        left: -270px;
+    }
+}

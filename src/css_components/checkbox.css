@@ -77,6 +77,10 @@ input[type='checkbox']:checked:active {
     background-color: #0055AA;
 }
 
+.formSubmitAttempted input[type='checkbox']:invalid {
+    border-color: #BF0001;
+}
+
 /* 
 CHECKBOX LABEL
 add this class to the label for aligning checkbox with text
